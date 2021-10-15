@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/plants3.jfif);
+    background-size:cover;
+    background-position:top;
+    background-repeat: no-repeat;
+   
+    font-family: sans-serif;
+}
+.menu_bar{
+    background: rgb(61, 44, 17);
+    text-align:center;
+}
+.menu_bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+/* all in one line and with no space  */
+.menu_bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+/* all with proper space  */
+.menu_bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+.active, .menu_bar ul li:hover{
+  background:rgba(148, 78, 13, 0.596);
+  border-radius:3px;
+}
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu_bar ul li:hover .sub-menu-1{
+    display: block;
+    position:absolute;
+    background-color:rgba(66, 37, 10, 0.596) ;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+/* appear horizontal ..but with hover effect */
+.menu_bar ul li:hover .sub-menu-1 ul{
+    display:block;
+    margin: 10px;
+}
+/* appear vertical box shape  */
+.menu_bar ul li:hover .sub-menu-1 ul li{
+    width:150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 1px;
+    text-align: left;
+}
+/* proepr vertical with but line under all last also ..so remove it  */
+.menu_bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu_bar ul li:hover .sub-menu-1 ul li a:hover{
+    color:rgba(197, 138, 83, 0.596)
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+/* first show none sub menu 2 part */
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: rgba(58, 34, 12, 0.596);
+}
+/* to show when we hover...... about margin top and left imp */
